@@ -55,6 +55,69 @@
             position: relative;
             top: 700px;
         }
+        
+        #table {
+            position: relative;
+            left: 60px;
+            text-align: center;
+        }
+        
+        #tableone,
+        #tabletwo,
+        #tablethree {
+            font-size: 20px;
+        }
+        
+        #webgame,
+        #ditpoem,
+        #reddit,
+        #future {
+            position: relative;
+            font-size: 20px;
+            left: 60px;
+        }
+        
+        #howto {
+            position: relative;
+            top: 1400px;
+        }
+        
+        .bigtext {
+            font-size: 20px;
+        }
+        
+        .bigtext-1 {
+            font-size: 20px;
+            position: relative;
+            left: 30px;
+        }
+        
+        .bigtext-2 {
+            font-size: 20px;
+            position: relative;
+            left: 60px;
+        }
+        
+        .bigtext-3 {
+            font-size: 20px;
+            position: relative;
+            left: 90px;
+        }
+        
+        .bigtext-4 {
+            font-size: 20px;
+            position: relative;
+            left: 120px;
+        }
+        
+        .subtitle {
+            font-size: 25px;
+        }
+        
+        #concimg {
+            position: relative;
+            left: 60px;
+        }
     </style>
 </head>
 
@@ -108,9 +171,48 @@
             <h2> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'책의 죽음' 선언</h2>
             <h2> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;오래된 매체를 배척하고 새로운 흐름만을 강조</h2>
             <h2> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;오래된 매체는 천천히 기존 매체들과 융합하며 계속되고,매체가 지겨워질 때쯤</h2>
-            <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;르네상스, 모더니즘 같은 문화적 혁명을 거쳐 성숙해져온 매체라는 것을 간과하지 말아야한다.</h2>
+            <h2> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;르네상스, 모더니즘 같은 문화적 혁명을 거쳐 성숙해져온 매체라는 것을 간과하지 말아야한다.</h2>
             <h2> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;새로움이 신념 그 자체였던 몇 년 전의 내가 생각났다.</h2>
             <h2> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;새로운 것을 모든 사람들이 좋아하진 않는다는 것을 다시금 생각하게 되었다.</h2><br>
+            <h2>&nbsp;&nbsp;&nbsp;&nbsp;몰락</h2>
+            <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;우리가 정말 모든 경우에 능동적이고 싶어하는가? - 57p</h2>
+            <h2 id="argue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;카올리의 주장: 상호작용성의 증가 -> - 58p</h2>
+            <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'수동성'이 다시금 자시금 자신의 권리를 주장하며 부상했다. - 59p</h2>
+            <h2>&nbsp;&nbsp;&nbsp;&nbsp;최근</h2>
+            <table id="table" border="1">
+                <tr>
+                    <td id="tableone" colspan="2">
+                        한국의 넷 아티스트
+                    </td>
+
+                </tr>
+                <tr>
+                    <td id="tabletwo">
+                        장영혜 중공업
+                    </td>
+                    <td id="tablethree">
+                        민구홍 매뉴팩처링
+                    </td>
+                </tr>
+            </table>
+            <text id="ditpoem">기존의 매체와 사이 좋게...</text><br>
+            <text id="webgame">웹게임</text><br>
+            <text id="reddit">r/netart 판</text>
+            <h2>&nbsp;&nbsp;&nbsp;&nbsp;미래</h2>
+            <text id="future">VR, AR과 접목<br>메타버스의 유행<br>코로나로 가속화된 비대면 매체로의 전환</text>
+
+        </div>
+        <div id="howto">
+            <h1>하이퍼 미디어의 한계를 극복하는 방법</h1>
+            <text class="bigtext">하이퍼 미디어, 디지털 문학의 몰락. 그럼에도 세상의 중심 흐름은 이 곳에서 이루어지고 있다.<br>
+                다양한 정보, 사람, 매체, 텍스트 등이 흘러넘치는 공간. 넷아트는 어떠게 시행착오를 받아들이고 어떤 방향으로 나아가야 하며,<br>
+                제작자는 독자에게 보여주고 싶은 것을 보여주기 위해서 어떻게 해야하는가?<br><br>
+            </text>
+            <text class="subtitle" id="mione">상호텍스트를 위한 디지털 문학의 미학적 전략 - p.49</text><br>
+
+            <text class="subtitle" id="mitwo">상호작용성을 위한 디지털 미학의 전략 -p.60, p.72, p.77</text><br>
+
+            <text class="subtitle" id="mithree">디지털 포엠의 미학적 전략 - p.103</text><br>
         </div>
 
     </div>
@@ -123,11 +225,45 @@
             document.getElementById("sangtwo").innerHTML = "상호작용성 == 작품 + 나의 의지, 행동";
         }
         document.getElementById("sangthree").onclick = function() {
-            document.getElementById("sangthree").innerHTML = "상호텍스트성 == 텍스트 + 텍스트";
+            document.getElementById("sangthree").innerHTML = "상호텍스트성 == 텍스트 + 텍스트 (연상)";
         }
         document.getElementById(">").onclick = function() {
-            document.getElementById(">").innerHTML = "<h2>< 연결되는 텍스트</h2><br><center><h2>끝없는 텍스트들의 외부에 텍스트 하나가 따로 존재한다는 것은 불가능하다 - p44</h2><br><img src=https://realette.github.io/careerreading/inter.png></center><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><center><h2>괴물과 싸우는 사람은 그 싸움 중 괴물이 되지 않도록 조심해야 한다. 네가 심연을 오랫동안 들여다본다면, 그 심연 또한 너를 들여다볼 것이기 때문이다.</h2></center><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>";
+            document.getElementById(">").innerHTML = "<h2>< 연결되는 텍스트</h2><br><center><h2>끝없는 텍스트들의 외부에 텍스트 하나가 따로 존재한다는 것은 불가능하다 - p44</h2><br><img src=https://realette.github.io/careerreading/inter.png></center><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><text class=subtitle>괴물과 싸우는 사람은 그 싸움 중 괴물이 되지 않도록 조심해야 한다.<br>네가 심연을 오랫동안 들여다본다면, 그 심연 또한 너를 들여다볼 것이기 때문이다. <br>- 프리드리히 니체</class><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>";
 
+        }
+        document.getElementById("argue").onclick = function() {
+            document.getElementById("argue").innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;카올리의 주장: 상호작용성의 증가 -> 독자의 유희공간 줄어듦 - 58p";
+        }
+        document.getElementById("reddit").onclick = function() {
+            document.getElementById("reddit").innerHTML = "r/netart 판 - 그마저도 가장 최근 게시물이 4년 전...";
+        }
+        document.getElementById("ditpoem").onclick = function() {
+            document.getElementById("ditpoem").innerHTML = "기존의 매체와 사이 좋게... -> 디지털 포엠";
+        }
+        document.getElementById("tablethree").onclick = function() {
+            window.open("https://minguhongmfg.com/about")
+        }
+        document.getElementById("future").onclick = function() {
+            window.open("https://youtu.be/f_u3sSffS78?t=4")
+
+        }
+        document.getElementById("mione").onclick = function() {
+            document.getElementById("mione").innerHTML = "<text class=subtitle>상호텍스트를 위한 디지털 문학의 미학적 전략 - p.49<br></text><text class=bigtext-1>이미 정해진 링크가 상호 텍스트성을 완전히 구현하지 못하는 단점<br></text><text class=bigtext-1>-> 여백의 미 : 빈 공간을 함께 두어, 독자로 하여금 이 곳에 작품에 대한 자신의 자유로운 연상을 펼치도록 하는 건 어떨까? - p.49<br> </text><text class=bigtext-1>-> 공동창작 프로젝트 : 독자가 참여하는 컨텐츠<br></text><text class=bigtext-2 id=blast>예시: 프로이데, 에스펜쉬트의 연상 블래스터 - p.49<br></text><br>"
+        }
+
+        document.getElementById("mitwo").onclick = function() {
+            document.getElementById("mitwo").innerHTML = "<text class=subtitle>상호작용성을 위한 디지털 미학의 전략 -p.60, p.72, p.77</text><br><text class=bigtext-1>...(중략)...독자를 적극적으로 작품 안으로 초대하여 '대화'를 나누거나 서로 '협력'하여 무엇인가를 이루어낸다는 것이다. - p.60</text><br><text class=bigtext-1>상호작용적 장면화</text><br><text class=bigtext-2>빈틈 없는 몰입. 마치 연극을 보듯이...</text><br><text class=bigtext-1>균열과 성찰</text><br><text class=bigtext-2>독자를 작품 안으로 기꺼이 참여하도록 끌어들일 뿐만 아니라 이를 넘어서서 작품에 대한 성찰을 가능하게 하는 것이다 - p.77</text><br><text class=bigtext-2>작품과 독자 사이 상호작용의 실체를 폭로함으로써 몰입에 균열을 일으키고 이에 대해 생각해볼 수 있게 만든다.</text><br><text class=bigtext-3>상호텍스트에서도 언급했던, 빈 공간을 지속적으로 강조하고 있다.</text><br><br>";
+        }
+        document.getElementById("mithree").onclick = function() {
+            document.getElementById("mithree").innerHTML = "<text class=subtitle>디지털 포엠의 미학적 전략 - p.103</text><br><text class=bigtext-1>초기에 각광받으며 등장한 새로운 형태의 신기한 문학들이 이전과는 전혀 다른 새로운 미학을 약속한 것과 달리<br>디지털 포엠은 처음부터 문학 실험의 전통과 적극적으로 연계했으며... (중략) - p.103</text><br><text class=bigtext-1 id=conc>-> 구체시의 계승 (디지털 포엠은 구체시의 계승자...(중략)) - p.113</text><br><text class=bigtext-2>매체가 정보 전달자일 뿐 아니라, 그 자체로 시의 의미를 형성하는 형태</text><br><text class=bigtext-2>매체성의 부각은 일차적으로 의미 전달을 방해하지만 결과적으로는 이 과정을 통해 새로운 의미가 생산된다 - p.111</text><img border=1px id=concimg src=https://realette.github.io/careerreading/conc.jfif><br><text class=bigtext-1>다매체성</text><br><text class=bigtext-2>영상, 음성, 링크(하이퍼텍스트)의 적극적 활용을 통하여 다양한 형식의 전개</text>";
+        }
+
+
+        document.getElementById("conc").onclick = function() {
+            alert("구체시= 구체적인 시, 신체시= 새로운 형식의 시")
+        }
+        document.getElementById("blast").onclick = function() {
+            window.open("http://www.a-blast.org/info/material.html")
         }
     </script>
 
